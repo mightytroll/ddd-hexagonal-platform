@@ -1,0 +1,8 @@
+{
+    "log": {
+        "sumologic": {
+            "host": null,
+            "path": null
+        }
+    }
+}

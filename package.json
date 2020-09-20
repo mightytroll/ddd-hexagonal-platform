@@ -1,0 +1,52 @@
+{
+    "name": "platform",
+    "version": "0.1.0",
+    "description": "A platform for building apps following DDD and hexagonal architecture",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "npm run cache:clear && node -r esm src/index.js",
+        "debug": "node --inspect -r esm src/index.js",
+        "watch": "nodemon --inspect -r esm src/index.js",
+        "test": "jest --runInBand",
+        "test:watch": "jest --watchAll --runInBand",
+        "format": "prettier --write ./src",
+        "format:check": "prettier --check ./src",
+        "cache:clear": "node -r esm bin/console.js cache:clear"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/mightytroll/platform"
+    },
+    "author": {
+        "name": "Igor Stojadinovic",
+        "email": "mightytroll@gmail.com",
+        "url": "https://www.linkedin.com/in/igorstojadinovic"
+    },
+    "license": "UNLICENSED",
+    "engines": {
+        "node": ">=12.0.0",
+        "npm": ">=6.0.0"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "config": "^3.3.1",
+        "cors": "^2.8.5",
+        "esm": "^3.2.25",
+        "express": "^4.17.1",
+        "lodash": "^4.17.19",
+        "mongoose": "^5.9.28",
+        "uuid": "^8.3.0",
+        "winston": "^3.3.3"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.11.0",
+        "babel-jest": "^26.2.2",
+        "faker": "^4.1.0",
+        "jest": "^26.2.2",
+        "jest-environment-node": "^26.2.0",
+        "mongodb-memory-server": "^6.6.3",
+        "nodemon": "^2.0.4",
+        "prettier": "^2.0.5",
+        "supertest": "^4.0.2"
+    }
+}

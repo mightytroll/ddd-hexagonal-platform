@@ -1,0 +1,16 @@
+{
+    "server": {
+        "name": "local",
+        "port": 3000,
+        "status": {
+            "text": "OK"
+        }
+    },
+    "express": {
+        "middleware": {
+            "cors": true,
+            "json": true,
+            "queryNormalizer": false
+        }
+    }
+}

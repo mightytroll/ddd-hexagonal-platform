@@ -1,0 +1,1 @@
+# DDD Hexagonal Platform

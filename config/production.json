@@ -1,0 +1,9 @@
+{
+    "log": {
+        "sumologic": {
+            "level": "info",
+            "silent": false,
+            "ssl": true
+        }
+    }
+}
